@@ -1,0 +1,23 @@
+{
+  "name": "hitokoto-get-zhhant",
+  "version": "1.0.0",
+  "description": "A tiny tool for getting hitokoto in Tranditional Chinese from the official API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altkennyh2l/hitokoto-get-zhhant.git"
+  },
+  "author": "Kenny Ha",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/altkennyh2l/hitokoto-get-zhhant/issues"
+  },
+  "homepage": "https://github.com/altkennyh2l/hitokoto-get-zhhant#readme",
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "opencc": "^1.0.5"
+  }
+}
