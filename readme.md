@@ -15,7 +15,7 @@ npm install hitokoto-get-zhhant --save
 
 ### Using in your project
 ```
-var hitokoto = require('./index.js').hitokoto;
+var hitokoto = require('hitokoto-get-zhhant').hitokoto;
 hitokoto();
 ```
 
