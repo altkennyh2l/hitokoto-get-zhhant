@@ -16,7 +16,17 @@ npm install hitokoto-get-zhhant --save
 ### Using in your project
 ```
 var hitokoto = require('hitokoto-get-zhhant').hitokoto;
-hitokoto();
+
+hitokoto().then(...function here...)
+```
+
+You can use this to see if everything is working fine. If yes, the requested hitokoto will be returned in console in Transitional Chinese.
+```
+var hitokoto = require('hitokoto-get-zhhant').hitokoto;
+
+hitokoto().then(function(text){
+    console.log(text);
+})
 ```
 
 ### Minor usage note
@@ -27,6 +37,11 @@ For conditional API call, change the URL as shown below.
 let response = await fetch('https://v1.hitokoto.cn/?encode=text');
 ```
 (index.js line 6)
+
+### Things to be fixed
+
+- Add option to request hitokoto of a specific category.
+- Performance enhancement (try making the thing faster, still don't know if it is possible)
 
 ### License
 I don't know much about licenses so I went with the same as OpenCC. That's it. 
