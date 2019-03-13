@@ -9,7 +9,9 @@ A simple async function handle API request and passes through [OpenCC](https://g
 ## Install and Usage
 
 ### Installing to your project
-`npm install hitokoto-get-zhhant --save`
+```
+npm install hitokoto-get-zhhant --save
+```
 
 ### Using in your project
 ```
@@ -21,7 +23,9 @@ hitokoto();
 There are still options and variable that can be changed but I didn't make it in the current version. (Will update if I have time) For the time being, if you need to request the API with condition, you can make change directly in the module js file.
 
 For conditional API call, change the URL as shown below.
-`let response = await fetch('https://v1.hitokoto.cn/?encode=text');`
+```
+let response = await fetch('https://v1.hitokoto.cn/?encode=text');
+```
 (index.js line 6)
 
 ### License
