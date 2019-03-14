@@ -1,6 +1,6 @@
 {
   "name": "hitokoto-get-zhhant",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "A tiny tool for getting hitokoto in Tranditional Chinese from the official API.",
   "main": "index.js",
   "scripts": {

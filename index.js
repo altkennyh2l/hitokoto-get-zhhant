@@ -9,15 +9,14 @@ async function hitokoto(cat){
         let hitokoto = opencc.convertSync(htkt);
         return hitokoto;
     } else {
-        let valcat = cat.length;
-        if (valcat < 2){
+        if (['a','b','c','d','e','f','g'].includes(cat)){
         let callurl = 'https://v1.hitokoto.cn/?encode=text&c=' + cat;
         let response = await fetch(callurl);
         let htkt = await response.text(); 
         let hitokoto = opencc.convertSync(htkt);
         return hitokoto;
         } else {
-            console.log("'cat' is too long. Expected parameter length is 1.");
+            console.log("The provided 'cat' is invalid. Please refer to hitokoto API doc.");
         }
     }
 }
