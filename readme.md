@@ -36,7 +36,7 @@ hitokoto("cat");
 ```
 Use category code as stated on hitokoto API doc. (Available options are [a,b,c,d,e,f,g])
 When undefined, it will request hitokoto from all category.
-Please be aware that hitokoto API only accept specifying ONE category, so putting more then one cat will result in 404: Not found under specific category (as such category does not exist).
+Please be aware that [hitokoto API](https://hitokoto.cn/api) (see section 4) only accept specifying ONE category, so putting more then one cat will result in 404: Not found under specific category (as such category does not exist).
 
 ### Things to be fixed
 
