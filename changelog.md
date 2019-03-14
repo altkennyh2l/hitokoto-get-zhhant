@@ -1,5 +1,9 @@
 # Changelog for npm release
 
+## 1.1.2
+- New: Script will now test if 'cat' is too long, request will not be sent if parameter's length is invaild (>1).
+(Note: for invaild content of 'cat' (category code that do not exist), request will still be sent and will return in 404. Script enhancement will be done in the next few version.)
+
 ## 1.1.1
 - Updated: Added link to hitokoto API doc in readme
 - Fixed: Minor typos in readme and changelog

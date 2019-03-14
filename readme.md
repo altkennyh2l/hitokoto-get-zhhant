@@ -38,6 +38,8 @@ Use category code as stated on hitokoto API doc. (Available options are [a,b,c,d
 When undefined, it will request hitokoto from all category.
 Please be aware that [hitokoto API](https://hitokoto.cn/api) (see section 4) only accept specifying ONE category, so putting more then one cat will result in 404: Not found under specific category (as such category does not exist).
 
+From v1.1.2, the script will tell if 'cat' is too long, which will not call the API for request to shorten time and eliminate expected 404 from invaild 'cat' parameter.
+
 ### Things to be fixed
 
 - Add option to request hitokoto of a specific category. ([issue](https://github.com/altkennyh2l/hitokoto-get-zhhant/issues/1))(Done partially)
