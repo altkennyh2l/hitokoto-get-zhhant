@@ -19,6 +19,7 @@ var hitokoto = require('hitokoto-get-zhhant').hitokoto;
 
 hitokoto().then(...function here...)
 ```
+For default, parameter for hitokoto() is undefined. You can add category code to specify a category of hitokoto you want to request. Details are further below.
 
 You can use this to see if everything is working fine. If yes, the requested hitokoto will be returned in console in Transitional Chinese.
 ```
@@ -29,18 +30,20 @@ hitokoto().then(function(text){
 })
 ```
 
-### Minor usage note
-There are still options and variable that can be changed but I didn't make it in the current version. (Will update if I have time) For the time being, if you need to request the API with condition, you can make change directly in the module js file.
-
-For conditional API call, change the URL as shown below.
+#### Requesting hitokoto for a specific category
 ```
-let response = await fetch('https://v1.hitokoto.cn/?encode=text');
+hitokoto("cat");
 ```
-(index.js line 6)
+Use category code as stated on hitokoto API doc. (Available options are [a,b,c,d,e,f,g])
+When undefined, it will request hitokoto from all category.
+Please be aware that hitokoto API only accept specifying ONE category, so putting more then one cat will result in 404: Not found under specific category (as such category does not exist).
 
 ### Things to be fixed
 
-- Add option to request hitokoto of a specific category.
+- Add option to request hitokoto of a specific category. ([issue](https://github.com/altkennyh2l/hitokoto-get-zhhant/issues/1))(Done partially)
+    - Extended [enhancement issue](https://github.com/altkennyh2l/hitokoto-get-zhhant/issues/2) :
+    - Prevent specifying multiple category
+    - console.log 404 return / other nonfatal error
 - Performance enhancement (try making the thing faster, still don't know if it is possible)
 
 ### License
