@@ -1,5 +1,7 @@
 # Changelog for npm release
 
+
+
 #@ 1.1.0
 - New: Add option to request hitokoto of a specific category.
 - Updated: Keywords in package.json
