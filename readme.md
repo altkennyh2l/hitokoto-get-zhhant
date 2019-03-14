@@ -1,5 +1,7 @@
 # hitokoto-get-zhhant
 
+[中文Readme文檔](./readme_chinese.md) | [English Readme](./readme.md)
+
 ## What is this?
 This is a nodejs module for getting hitokoto response in Tranditional Chinese (zh-hant) and via the official API ([https://v1.hitokoto.cn](https://v1.hitokoto.cn)).
 
@@ -36,7 +38,7 @@ hitokoto().then(function(text){
 })
 ```
 
-#### Requesting hitokoto for a specific category
+### Requesting hitokoto for a specific category
 ```
 hitokoto("cat");
 ```

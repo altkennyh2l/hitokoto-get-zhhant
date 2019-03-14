@@ -1,5 +1,8 @@
 # Changelog for npm release
 
+## 1.2.1
+-New: Added readme_chinese.md
+
 ## 1.2.0
 - New: Script will now see if 'cat' parameter is vaild (if it is [a,b,c,d,e,f,g]). Request will not be sent if parameter is invaild. (Ref. to note in 1.1.2 below)
 
