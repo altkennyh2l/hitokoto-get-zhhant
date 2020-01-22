@@ -1,6 +1,6 @@
 # hitokoto-get-zhhant
 
-[中文Readme文檔](./readme_chinese.md) | [English Readme](./readme.md)
+THIS THING IS MOVED TO [KomattaSorata/hitokoto-zhhant](https://github.com/KomattaSorata/hitokoto-zhhant). Please refer to the new repo. 
 
 ## What is this?
 This is a nodejs module for getting hitokoto response in Tranditional Chinese (zh-hant) and via the official API ([https://v1.hitokoto.cn](https://v1.hitokoto.cn)).
